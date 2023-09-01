@@ -60,6 +60,10 @@ libraries = {
         "library": "celery >= 4.0, < 6.0",
         "instrumentation": "opentelemetry-instrumentation-celery==0.41b0.dev",
     },
+    "circuits": {
+        "library": "circuits >= 3.2, < 4.0",
+        "instrumentation": "opentelemetry-instrumentation-circuits==0.41b0.dev",
+    },
     "confluent-kafka": {
         "library": "confluent-kafka >= 1.8.2, <= 2.2.0",
         "instrumentation": "opentelemetry-instrumentation-confluent-kafka==0.41b0.dev",
