@@ -98,9 +98,9 @@ def _wrap_processtask(meter: Meter, tracer: Tracer, wrapped, instance, args, kwa
             event, task, *_ = args
             span.set_attributes(
                 {
-                    "circuits.event_name": event.name,
-                    "circuits.event_module": event.__module__,
-                    "circuits.task_name": task.__qualname__,
+                    "circuits.event.name": event.name,
+                    "circuits.event.module": event.__module__,
+                    "circuits.task.name": task.__qualname__,
                 }
             )
         return wrapped(*args, **kwargs)
